@@ -1,0 +1,475 @@
+CRITICAL - 2021-05-07 00:03:37 --> include(modal_detail_user.php): Failed to open stream: No such file or directory
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/all_history.php(113): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/all_history.php(113): include()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(278): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->history_all()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-07 00:03:58 --> include(/home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools../modal_detail_user.php): Failed to open stream: No such file or directory
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/all_history.php(114): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/all_history.php(114): include()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(278): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->history_all()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-07 09:12:01 --> Too few arguments to function App\Controllers\LabController::update_pinjaman(), 0 passed in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->update_pinjaman()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-07 09:12:43 --> Too few arguments to function App\Controllers\LabController::update_pinjaman(), 0 passed in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->update_pinjaman()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-07 09:25:50 --> syntax error, unexpected identifier "createFromFormat", expecting variable or "$"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-07 09:26:21 --> syntax error, unexpected identifier "createFromFormat", expecting variable or "$"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-07 09:26:22 --> syntax error, unexpected identifier "createFromFormat", expecting variable or "$"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-07 09:28:04 --> syntax error, unexpected identifier "createFromFormat", expecting variable or "$"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-07 09:30:14 --> syntax error, unexpected identifier "createFromFormat", expecting variable or "$"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(78): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-07 09:31:34 --> Call to a member function format() on int
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(78): view()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-07 12:56:44 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:57:00 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:57:40 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:57:41 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:57:42 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:57:53 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:58:16 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:58:40 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:58:41 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 12:58:52 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:05:23 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:05:40 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:05:41 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:07:15 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:07:50 --> auth,user filter must have a matching alias defined.
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}
+CRITICAL - 2021-05-07 13:09:33 --> auth,user filter must have a matching alias defined.
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}
+CRITICAL - 2021-05-07 13:09:34 --> auth,user filter must have a matching alias defined.
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}
+CRITICAL - 2021-05-07 13:09:41 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:13:36 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:13:38 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:13:39 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:14:04 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:14:26 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsAdmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsAdmin->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:14:30 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Filters/EnsureUserIsUser.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\EnsureUserIsUser->before()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:23:43 --> Attempt to read property "jadwal_id" on array
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(333): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->delete_pinjaman()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 13:32:44 --> include(modal_edit_lab.php): Failed to open stream: No such file or directory
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools_pinjaman_saya.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools_pinjaman_saya.php(108): include()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(46): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-07 13:33:01 --> Undefined variable $key
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools_pinjaman_saya.php(114): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(46): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 14:17:56 --> include(modal_edit_tools.php): Failed to open stream: No such file or directory
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/daftar_books.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/daftar_books.php(90): include()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(14): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->index()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-07 14:18:36 --> Undefined variable $tool
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/modal_edit_books.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/daftar_books.php(90): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(14): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->index()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-07 14:23:53 --> Undefined variable $book_id
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(160): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->update()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 14:36:28 --> Undefined variable $majors
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/form_create_books.php(127): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(201): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->show_create_form()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 14:42:08 --> syntax error, unexpected identifier "session"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-07 14:45:36 --> Undefined variable $bookEntity
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(222): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->store()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-07 14:59:36 --> Undefined variable $pinjaman
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/daftar_books_konfirmasi.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(239): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->show_data_konfirmasi()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 21:49:33 --> Undefined property: stdClass::$isbn
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/books/daftar_buku_pinjaman_saya.php(97): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(69): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 22:07:54 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-07 22:26:23 --> Unmatched '}'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-07 23:17:59 --> syntax error, unexpected token ";", expecting "]"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-07 23:28:36 --> Call to undefined method App\Models\Major::belongsTo
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Models/Major.php(32): CodeIgniter\Model->__call()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/UniversityController.php(98): App\Models\Major->faculty()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\UniversityController->show()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#7 {main}
+CRITICAL - 2021-05-07 23:29:37 --> Undefined property: stdClass::$major
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/more_features/daftar_fakultas_dan_jurusan.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/UniversityController.php(102): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\UniversityController->show()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 23:40:24 --> Undefined variable $book
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/more_features/daftar_fakultas_dan_jurusan.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/UniversityController.php(102): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\UniversityController->show()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-07 23:58:35 --> syntax error, unexpected token ":", expecting "," or ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/UniversityController.php(102): view()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\UniversityController->show()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#9 {main}

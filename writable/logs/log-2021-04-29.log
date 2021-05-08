@@ -1,0 +1,376 @@
+CRITICAL - 2021-04-29 12:48:04 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/spark(53): require('/home/nabiel/De...')
+#2 {main}
+CRITICAL - 2021-04-29 12:49:35 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/spark(53): require('/home/nabiel/De...')
+#2 {main}
+CRITICAL - 2021-04-29 07:57:18 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:19 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:20 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:23 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:31 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:36 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:37 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:37 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:37 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:58 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:57:59 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:59:05 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 07:59:06 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 08:00:01 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 08:00:25 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 08:01:11 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 09:38:45 --> Call to undefined method App\Models\User::where()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-29 09:39:29 --> Call to undefined method App\Models\User::firstOrFail
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(34): CodeIgniter\Model->__call()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-29 09:40:28 --> Call to undefined method App\Models\User::where()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-29 09:40:43 --> Call to undefined method App\Models\User::where()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-29 09:41:17 --> Call to undefined method App\Models\User::firstOrFail
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(34): CodeIgniter\Model->__call()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-29 09:47:08 --> Unclosed '[' does not match ')'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 09:47:09 --> Unclosed '[' does not match ')'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 09:53:29 --> Attempt to read property "password" on array
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-29 10:08:14 --> Invalid file: simple-tables.php
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(46): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->tables()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 10:08:40 --> Invalid file: vendor/data-tables.php
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(46): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->tables()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 10:40:33 --> syntax error, unexpected token "}", expecting ";"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-04-29 10:51:09 --> syntax error, unexpected variable "$this"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(236): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Config/Routes.php(47): view()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(883): CodeIgniter\CodeIgniter->Config\{closure}()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-29 11:00:54 --> syntax error, unexpected token "<"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Home.php(13): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 11:01:11 --> Array to string conversion
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/dashboard/index.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Home.php(13): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 11:14:07 --> Undefined variable $user
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/layout/_partials/topbar.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(468): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/layout/app.php(21): CodeIgniter\View\View->include()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(236): CodeIgniter\View\View->render()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Config/Routes.php(47): view()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(883): CodeIgniter\CodeIgniter->Config\{closure}()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#12 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-04-29 21:23:08 --> Trying to access array offset on value of type null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->login()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-29 22:08:07 --> Undefined variable $validator
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/register.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Register.php(12): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Register->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 22:08:13 --> Undefined variable $validator
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/register.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Register.php(12): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Register->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 22:15:23 --> Undefined variable $validator
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/register.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Register.php(12): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Register->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 22:42:23 --> syntax error, unexpected token "}"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(11): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->index()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-29 22:43:39 --> Undefined variable $name
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/login.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(11): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 22:44:05 --> Undefined variable $email_or_nim
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/login.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(11): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 22:45:13 --> Undefined variable $validator
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/vendor/login.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Login.php(11): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Login->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-29 23:36:11 --> Undefined property: CodeIgniter\View\View::$uri
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/layout/_partials/sidebar.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(468): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/layout/app.php(16): CodeIgniter\View\View->include()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(236): CodeIgniter\View\View->render()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/Home.php(17): view()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Home->about()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#12 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}

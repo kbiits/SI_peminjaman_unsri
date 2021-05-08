@@ -1,0 +1,449 @@
+CRITICAL - 2021-05-02 04:52:51 --> Attempt to read property "status" on null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-02 04:52:56 --> Attempt to read property "status" on null
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+ERROR - 2021-05-02 05:29:45 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-05-02 05:29:45 --> Unable to connect to the database.
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/BookController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-02 05:38:14 --> Undefined variable $book
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(14): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-02 05:38:39 --> Undefined variable $book
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(14): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-02 05:49:15 --> Call to undefined method App\Entities\Book::update()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\BookController->pinjam()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}
+CRITICAL - 2021-05-02 05:54:45 --> Undefined property: stdClass::$title
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools_pinjaman_saya.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(25): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-02 05:56:56 --> Call to undefined method App\Models\PeminjamanAlatModel::major
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(23): CodeIgniter\Model->__call()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-02 05:57:32 --> Call to undefined method App\Models\PeminjamanAlatModel::major
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(23): CodeIgniter\Model->__call()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-02 05:57:57 --> Unmatched ')'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(25): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-02 05:58:14 --> Undefined property: stdClass::$isbn
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/tools/daftar_tools_pinjaman_saya.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(25): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-02 06:26:23 --> Attempt to read property "status" on array
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(66): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+ERROR - 2021-05-02 06:36:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`, *
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` ...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:36:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`, *
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` ...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:36:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:36:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:36:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:36:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.`faculty`
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:38:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:38:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:38:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:38:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:38:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:38:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`major_id`
+INNER...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:38:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`...' at line 1 in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+CRITICAL - 2021-05-02 06:38:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, `faculties`.*
+FROM `tools`
+LEFT JOIN `majors` ON `majors`.`id` = `tools`.`...' at line 1
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/BaseModel.php(583): CodeIgniter\Model->doFindAll()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->index()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#12 {main}
+ERROR - 2021-05-02 06:44:37 --> mysqli_sql_exception: Unknown column 't.id' in 'on clause' in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(38): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-02 06:44:37 --> Unknown column 't.id' in 'on clause'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(38): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+ERROR - 2021-05-02 06:44:41 --> mysqli_sql_exception: Unknown column 't.faculty_id' in 'on clause' in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(38): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-02 06:44:41 --> Unknown column 't.faculty_id' in 'on clause'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(38): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-02 06:58:05 --> Call to undefined method stdClass::toArray()
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->kembalikan()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}
+CRITICAL - 2021-05-02 06:58:44 --> CodeIgniter\Database\BaseBuilder::update(): Argument #1 ($set) must be of type ?array, stdClass given, called in /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php on line 113
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(113): CodeIgniter\Database\BaseBuilder->update()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->kembalikan()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-02 06:59:41 --> Attempt to read property "id" on array
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/ToolController.php(113): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->kembalikan()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-02 07:00:31 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-02 07:39:53 --> Too few arguments to function App\Controllers\ToolController::kembalikan(), 1 passed in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php on line 936 and exactly 2 expected
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\ToolController->kembalikan()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#5 {main}

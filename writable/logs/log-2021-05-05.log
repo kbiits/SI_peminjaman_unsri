@@ -1,0 +1,180 @@
+CRITICAL - 2021-05-05 09:42:02 --> syntax error, unexpected token "}"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-05 09:42:07 --> syntax error, unexpected token "}"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-05 09:42:07 --> syntax error, unexpected token "}"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-05 09:44:32 --> syntax error, unexpected token "}"
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-05 09:48:05 --> Array to string conversion
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(127): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-05 09:48:43 --> Array to string conversion
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-05 09:49:29 --> Undefined array key 0
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(127): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->pinjam()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-05 10:01:35 --> Cannot use object of type stdClass as array
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(14): App\Controllers\LabController->mergeLabData()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->index()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#6 {main}
+CRITICAL - 2021-05-05 10:35:33 --> syntax error, unexpected token ","
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(893): class_exists()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+ERROR - 2021-05-05 11:15:20 --> mysqli_sql_exception: Unknown column 'labs.status' in 'field list' in /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(51): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-05 11:15:20 --> Unknown column 'labs.status' in 'field list'
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(51): CodeIgniter\Model->__call()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-05 11:22:12 --> Undefined property: stdClass::$jadwals
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/modal_jadwal.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/daftar_lab_pinjaman_saya.php(102): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(54): view()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#11 {main}
+CRITICAL - 2021-05-05 11:22:55 --> Undefined property: stdClass::$status
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/daftar_lab_pinjaman_saya.php(87): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(54): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-05 11:25:53 --> Undefined property: stdClass::$lab_id
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/daftar_lab_pinjaman_saya.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(57): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-05 17:54:26 --> Invalid file: lav/daftar_lab_pinjaman_saya.php
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(62): view()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#8 {main}
+CRITICAL - 2021-05-05 17:56:20 --> Undefined property: stdClass::$jadwal_masuk
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/daftar_lab_pinjaman_saya.php(106): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(62): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->show_by_user()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
+CRITICAL - 2021-05-05 18:34:59 --> Undefined property: stdClass::$status
+#0 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Views/lab/daftar_lab.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(220): include('...')
+#2 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render()
+#4 /home/nabiel/Desktop/SI_peminjaman_unsri/app/Controllers/LabController.php(19): view()
+#5 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\LabController->index()
+#6 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#7 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nabiel/Desktop/SI_peminjaman_unsri/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nabiel/Desktop/SI_peminjaman_unsri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('...')
+#10 {main}
