@@ -13,7 +13,7 @@ class BookModel extends Model
     protected $primaryKey = 'isbn';
 
     protected $validationRules = [
-        'isbn' => 'required|string|min_length[13]|max_length[255]',
+        'isbn' => 'required|string|min_length[13]|max_length[20]',
         'title' => 'required|string|max_length[255]',
         'category' => 'required|string|max_length[255]',
         'stock' => 'integer',
@@ -23,7 +23,7 @@ class BookModel extends Model
         'isbn' => [
             'required' => 'ISBN tidak boleh kosong',
             'min_length' => 'Field isbn setidaknya harus berisi 13 karakter',
-            'max_length' => 'Field isbn maximal berisi 255 karakter',
+            'max_length' => 'Field isbn maximal berisi 20 karakter',
         ],
         'title' => [
             'required' => 'Judul tidak boleh kosong',
