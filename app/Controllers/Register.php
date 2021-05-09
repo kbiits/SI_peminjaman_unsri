@@ -37,8 +37,8 @@ class Register extends BaseController
             'password' => 'required|min_length[6]|max_length[100]',
             'password_confirm' => 'matches[password]',
             'address' => 'required|string|max_length[255]',
-            'faculty' => 'required|integer|is_not_unique[faculties.id]',
-            'major' => 'required|integer|is_not_unique[majors.id]',
+            'faculty_id' => 'required|integer|is_not_unique[faculties.id]',
+            'major_id' => 'required|integer|is_not_unique[majors.id]',
             'gender' => 'required|integer|in_list[1,0]',
             'role' => 'permit_empty|integer|in_list[0]',
         ];
@@ -74,12 +74,12 @@ class Register extends BaseController
                 'required' => 'Field alamat tidak boleh kosong',
                 'max_length' => 'Field alamat tidak boleh lebih dari 255 karakter',
             ],
-            'faculty' => [
+            'faculty_id' => [
                 'required' => 'Field fakultas tidak boleh kosong',
                 'integer' => 'Field fakultas hanya boleh berisi integer',
                 'is_not_unique' => 'Fakultas tidak ditemukan',
             ],
-            'major' => [
+            'major_id' => [
                 'required' => 'Field jurusan tidak boleh kosong',
                 'integer' => 'Field major hanya boleh berisi integer',
                 'is_not_unique' => 'Jurusan tidak ditemukan',

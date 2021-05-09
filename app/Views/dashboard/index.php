@@ -37,6 +37,8 @@ $user_role = session('user')['role'];
                             <div class="mt-2 mb-0 text-muted text-xs">
                                 <?php if ($p_lab > 0) : ?>
                                     <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> <?= esc($p_lab); ?>%</span>
+                                <?php elseif ($p_lab == 0) : ?>
+                                    <span class="text-warning mr-2"><i class="fa fa-chart-line"></i> <?= esc($p_lab); ?>%</span>
                                 <?php else : ?>
                                     <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> <?= esc($p_lab); ?>%</span>
                                 <?php endif; ?>
@@ -62,6 +64,8 @@ $user_role = session('user')['role'];
                             <div class="mt-2 mb-0 text-muted text-xs">
                                 <?php if ($p_alat > 0) : ?>
                                     <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> <?= esc($p_alat); ?>%</span>
+                                <?php elseif ($p_alat == 0) : ?>
+                                    <span class="text-warning mr-2"><i class="fa fa-chart-line"></i> <?= esc($p_alat); ?>%</span>
                                 <?php else : ?>
                                     <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> <?= esc($p_alat); ?>%</span>
                                 <?php endif; ?>
@@ -87,6 +91,8 @@ $user_role = session('user')['role'];
                             <div class="mt-2 mb-0 text-muted text-xs">
                                 <?php if ($p_buku > 0) : ?>
                                     <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> <?= esc($p_buku); ?>%</span>
+                                <?php elseif ($p_buku == 0) : ?>
+                                    <span class="text-warning mr-2"><i class="fa fa-chart-line"></i> <?= esc($p_buku); ?>%</span>
                                 <?php else : ?>
                                     <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> <?= esc($p_buku); ?>%</span>
                                 <?php endif; ?>
@@ -104,7 +110,7 @@ $user_role = session('user')['role'];
         <div class="col-12">
             <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-primary">Rekapitulasi Aktivitas <?= $user_role === '1' ? 'Website' : session('user')['name'] ?> Per Bulan</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Rekapitulasi Aktivitas <?= $user_role === '1' ? 'Website' : session('user')['name'] ?> per Bulan</h6>
                     <div class="dropdown no-arrow">
                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>

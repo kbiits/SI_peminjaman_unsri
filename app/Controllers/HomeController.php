@@ -35,7 +35,7 @@ class HomeController extends BaseController
 
 
         $data = $db->query($sql, null, true)->getResultObject();
-        
+
         $lastMonth = date('n', strtotime('last month'));
         $thisMonth = date('n', strtotime('this month'));
         $persentaseAlat = 0;
@@ -80,9 +80,9 @@ class HomeController extends BaseController
                 $newData[$d->month] += $d->count_data;
             }
         }
-        $persentaseAlat = ($thisMonthAlat - $lastMonthAlat) / ($lastMonthAlat == 0 ? $thisMonthAlat : $lastMonthAlat) * 100;
-        $persentaseBuku = ($thisMonthBuku - $lastMonthBuku) / ($lastMonthBuku == 0 ? $thisMonthBuku : $lastMonthBuku) * 100;
-        $persentaseLab = ($thisMonthLab - $lastMonthLab) / ($lastMonthLab == 0 ? $thisMonthLab : $lastMonthLab) * 100;
+        $persentaseAlat = ($thisMonthAlat - $lastMonthAlat) / ($lastMonthAlat == 0 ? ($thisMonthAlat == 0 ? 1 : $thisMonthBuku) : $lastMonthAlat) * 100;
+        $persentaseBuku = ($thisMonthBuku - $lastMonthBuku) / ($lastMonthBuku == 0 ? ($thisMonthBuku == 0 ? 1 : $thisMonthBuku) : $lastMonthBuku) * 100;
+        $persentaseLab = ($thisMonthLab - $lastMonthLab) / ($lastMonthLab == 0 ? ($thisMonthLab == 0 ? 1 : $thisMonthAlat) : $lastMonthLab) * 100;
 
         // Make $newData to be 12 long array with int 0 as default value 
         for ($i = 1; $i < 13; $i++) {
