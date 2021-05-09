@@ -44,55 +44,56 @@ $this->section('content');
                 <div class="table-responsive p-3">
                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                         <thead class="thead-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Judul Buku</th>
-                            <th>Kategori</th>
-                            <th>Status</th>
-                            <th>Tanggal saat dipinjam</th>
-                            <th>Tanggal saat dikembalikan</th>
-                            <th>Tanggal saat dikonfirmasi</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul Buku</th>
+                                <th>Kategori</th>
+                                <th>Status</th>
+                                <th>Tanggal saat dipinjam</th>
+                                <th>Tanggal saat dikembalikan</th>
+                                <th>Tanggal saat dikonfirmasi</th>
+                            </tr>
                         </thead>
                         <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Judul Buku</th>
-                            <th>Kategori</th>
-                            <th>Status</th>
-                            <th>Tanggal saat dipinjam</th>
-                            <th>Tanggal saat dikembalikan</th>
-                            <th>Tanggal saat dikonfirmasi</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul Buku</th>
+                                <th>Kategori</th>
+                                <th>Status</th>
+                                <th>Tanggal saat dipinjam</th>
+                                <th>Tanggal saat dikembalikan</th>
+                                <th>Tanggal saat dikonfirmasi</th>
+                            </tr>
                         </tfoot>
                         <tbody>
-                        <?php $i = 1;
-                        foreach ($pinjaman as $p) : ?>
-                            <tr>
-                                <td><?= esc($i); ?></td>
-                                <td><?= $p->title ?></td>
-                                <td><?= $p->category ?></td>
-                                <td>
-                                    <?php if ($p->status === '0') {
-                                        $statusBadge = 'danger';
-                                        $messageStatus = 'Masih dipinjam';
-                                    } else if ($p->status === '1') {
-                                        $statusBadge = 'success';
-                                        $messageStatus = 'Telah dikembalikan';
-                                    } else {
-                                        $statusBadge = 'warning';
-                                        $messageStatus = 'Menunggu konfirmasi admin';
-                                    }
-                                    ?>
-                                    <span class="badge badge-<?= esc($statusBadge) ?>">
-                                        <?= $messageStatus ?>
-                                    </span>
-                                </td>
-                                <td><?= $p->dipinjam_pada ?></td>
-                                <td><?= $p->dikembalikan_pada ?? '-----' ?></td>
-                                <td><?= $p->dikonfirmasi_pada ?? '-----' ?></td>
-                            </tr>
-                            <?php $i++; endforeach; ?>
+                            <?php $i = 1;
+                            foreach ($pinjaman as $p) : ?>
+                                <tr>
+                                    <td><?= esc($i); ?></td>
+                                    <td><?= $p->title ?></td>
+                                    <td><?= $p->category ?></td>
+                                    <td>
+                                        <?php if ($p->status === '0') {
+                                            $statusBadge = 'danger';
+                                            $messageStatus = 'Masih dipinjam';
+                                        } else if ($p->status === '1') {
+                                            $statusBadge = 'success';
+                                            $messageStatus = 'Telah dikembalikan';
+                                        } else {
+                                            $statusBadge = 'warning';
+                                            $messageStatus = 'Menunggu konfirmasi admin';
+                                        }
+                                        ?>
+                                        <span class="badge badge-<?= esc($statusBadge) ?>">
+                                            <?= $messageStatus ?>
+                                        </span>
+                                    </td>
+                                    <td><?= $p->dipinjam_pada ?></td>
+                                    <td><?= $p->dikembalikan_pada ?? '-----' ?></td>
+                                    <td><?= $p->dikonfirmasi_pada ?? '-----' ?></td>
+                                </tr>
+                            <?php $i++;
+                            endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -111,6 +112,7 @@ $this->section('css');
 
 ?>
 <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="/vendor/datatables/responsive.dataTables.min.css" rel="stylesheet">
 
 <?php
 $this->endSection();
@@ -121,13 +123,20 @@ $this->section('script');
 <!-- Page level plugins -->
 <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/vendor/datatables/dataTables.responsive.min.js"></script>
+<script src="/vendor/datatables/dataTables.buttons.min.js"></script>
+<script src="/vendor/datatables/jszip.min.js"></script>
+<script src="/vendor/datatables/pdfmake.min.js"></script>
+<script src="/vendor/datatables/vfs_fonts.js"></script>
+<script src="/vendor/datatables/buttons.html5.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#dataTableHover').DataTable({
-            columns: [
-                {width: '3%'},
+            columns: [{
+                    width: '3%'
+                },
                 null,
                 null,
                 null,
@@ -135,8 +144,26 @@ $this->section('script');
                 null,
                 null,
             ],
+            dom: 'Bfrtip',
+            buttons: [{
+                    extend: 'pdfHtml5',
+                    exportOptions: {},
+                    title: "Riwayat Pinjaman Buku <?= session('user')['name'] ?>",
+                    className: 'btn btn-info btn-sm mr-2',
+                    download: 'open',
+                    pageSize: 'A4',
+                    messageTop: 'Riwayat Pinjaman Buku',
+                },
+                {
+                    extend: 'excelHtml5',
+                    exportOptions: {},
+                    title: "Riwayat Pinjaman Buku <?= session('user')['name'] ?>",
+                    className: 'btn btn-info btn-sm mr-2',
+                    sheetName: 'Riwayat Pinjaman Buku',
+                }
+            ],
         }); // ID From dataTable with Hover
-        $('a.nav-link.collapsed').on('click', function (e) {
+        $('a.nav-link.collapsed').on('click', function(e) {
             e.preventDefault();
         });
     });
@@ -145,4 +172,3 @@ $this->section('script');
 <?php
 $this->endSection();
 ?>
-

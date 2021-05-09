@@ -55,165 +55,139 @@ $user_role = session('user')['role'];
                 <div class="table-responsive p-3">
                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                         <thead class="thead-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Lab</th>
-                            <th>Fakultas</th>
-                            <th>Jurusan</th>
-                            <th>Status</th>
-                            <th>Detail</th>
-                            <th>Aksi</th>
+                            <tr>
+                                <th>No</th>
+                                <th>Lab</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Status</th>
+                                <th>Detail</th>
+                                <th>Aksi</th>
 
-                        </tr>
+                            </tr>
                         </thead>
                         <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Name</th>
-                            <th>Fakultas</th>
-                            <th>Jurusan</th>
-                            <th>Status</th>
-                            <th>Detail</th>
-                            <th>Aksi</th>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Status</th>
+                                <th>Detail</th>
+                                <th>Aksi</th>
 
-                        </tr>
+                            </tr>
                         </tfoot>
                         <tbody>
-                        <?php $i = 1;
-                        foreach ($labs as $key => $lab) : ?>
-                            <tr>
-                                <td><?= $i; ?></td>
-                                <td><?= $lab->name ?></td>
-                                <td><?= $lab->faculty ?></td>
-                                <td><?= $lab->major ?? '-' ?> </td>
-                                <td>
-                                    <?php if ($lab->status_lab === '0') {
-                                        $statusBadge = 'success';
-                                        $messageStatus = 'Tersedia';
-                                    } else {
-                                        $statusBadge = 'warning';
-                                        $messageStatus = 'Sedang dalam perbaikan';
-                                    }
-                                    ?>
-                                    <span class="badge badge-<?= esc($statusBadge) ?> py-1 px-2">
+                            <?php $i = 1;
+                            foreach ($labs as $key => $lab) : ?>
+                                <tr>
+                                    <td><?= $i; ?></td>
+                                    <td><?= $lab->name ?></td>
+                                    <td><?= $lab->faculty ?></td>
+                                    <td><?= $lab->major ?? '-' ?> </td>
+                                    <td>
+                                        <?php if ($lab->status_lab === '0') {
+                                            $statusBadge = 'success';
+                                            $messageStatus = 'Tersedia';
+                                        } else {
+                                            $statusBadge = 'warning';
+                                            $messageStatus = 'Sedang dalam perbaikan';
+                                        }
+                                        ?>
+                                        <span class="badge badge-<?= esc($statusBadge) ?> py-1 px-2">
                                             <?= $messageStatus ?>
                                         </span>
-                                </td>
-                                <?php if ($lab->status_lab === '0') : ?>
-                                    <td>
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                    data-target="#modalDetail<?= esc($i); ?>"
-                                                    id="#modalDetailButton">Detail
-                                            </button>
-                                        </div>
-                                        <?php include('modal_jadwal.php') ?>
                                     </td>
-                                    <?php if ($user_role === '0') : ?>
+                                    <?php if ($lab->status_lab === '0') : ?>
                                         <td>
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-info" data-toggle="modal"
-                                                        data-target="#modalPinjam<?= esc($i); ?>"
-                                                        id="#modalPinjamButton">
-                                                    Pinjam
+                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalDetail<?= esc($i); ?>" id="#modalDetailButton">Detail
                                                 </button>
                                             </div>
-                                            <?php include('modal_pinjam_lab.php') ?>
+                                            <?php include('modal_jadwal.php') ?>
                                         </td>
+                                        <?php if ($user_role === '0') : ?>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modalPinjam<?= esc($i); ?>" id="#modalPinjamButton">
+                                                        Pinjam
+                                                    </button>
+                                                </div>
+                                                <?php include('modal_pinjam_lab.php') ?>
+                                            </td>
+                                        <?php else : ?>
+                                            <td>
+                                                <!-- Modal Edit -->
+                                                <?php include('modal_edit_lab.php') ?>
+                                                <div class="btn-group mr-2 mb-2 mb-md-0">
+                                                    <button type="button" class="btn btn-sm btn-warning modalEditBtn" data-toggle="modal" data-target="#modalEdit<?= esc($i); ?>" id="modalEditButton" onclick="">
+                                                        Edit
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-sm btn-danger" href="javascript:void(0);" data-toggle="modal" data-target="#modalDelete<?= $i; ?>">
+                                                        Hapus
+                                                    </a>
+                                                </div>
+                                                <form id="form-delete-<?= $i; ?>" action="labs/<?= $lab->id ?>" method="POST">
+                                                    <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+                                                    <input type="hidden" name="_method" value="DELETE" />
+                                                </form>
+
+                                                <!-- Modal Delete -->
+                                                <?php include __DIR__ . ' /../modal_delete.php' ?>
+                                            </td>
+                                        <?php endif; ?>
                                     <?php else : ?>
-                                        <td>
-                                            <!-- Modal Edit -->
-                                            <?php include('modal_edit_lab.php') ?>
-                                            <div class="btn-group mr-2 mb-2 mb-md-0">
-                                                <button type="button" class="btn btn-sm btn-warning modalEditBtn"
-                                                        data-toggle="modal"
-                                                        data-target="#modalEdit<?= esc($i); ?>"
-                                                        id="modalEditButton"
-                                                        onclick="">
-                                                    Edit
-                                                </button>
-                                            </div>
-                                            <div class="btn-group">
-                                                <a class="btn btn-sm btn-danger" href="javascript:void(0);"
-                                                   data-toggle="modal"
-                                                   data-target="#modalDelete<?= $i; ?>">
-                                                    Hapus
-                                                </a>
-                                            </div>
-                                            <form id="form-delete-<?= $i; ?>" action="labs/<?= $lab->id ?>"
-                                                  method="POST">
-                                                <input type="hidden" name="<?= csrf_token() ?>"
-                                                       value="<?= csrf_hash() ?>"/>
-                                                <input type="hidden" name="_method" value="DELETE"/>
+                                        <?php if ($user_role === '0') : ?>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalDetail<?= esc($i); ?>" id="#modalDetailButton" disabled>Detail
+                                                    </button>
+                                                </div>
+                                                <?php include('modal_jadwal.php') ?>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modalPinjam<?= esc($i); ?>" id="#modalPinjamButton" disabled>
+                                                        Pinjam
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        <?php else : ?>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalDetail<?= esc($i); ?>" id="#modalDetailButton">Detail
+                                                    </button>
+                                                </div>
+                                                <?php include('modal_jadwal.php') ?>
+                                            </td>
+                                            <td>
+                                                <!-- Modal Edit -->
+                                                <?php include('modal_edit_lab.php') ?>
+                                                <div class="btn-group mr-2 mb-2 mb-md-0">
+                                                    <button type="button" class="btn btn-sm btn-warning modalEditBtn" data-toggle="modal" data-target="#modalEdit<?= esc($i); ?>" id="modalEditButton" onclick="">
+                                                        Edit
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-sm btn-danger" href="javascript:void(0);" data-toggle="modal" data-target="#modalDelete<?= esc($i); ?>">
+                                                        Hapus
+                                                    </a>
+                                                </div>
+
+                                                <?php include __DIR__ . '/../modal_delete.php' ?>
+                                            </td>
+                                            <form id="form-delete-<?= $i; ?>" action="labs/<?= $lab->id ?>" method="POST">
+                                                <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
+                                                <input type="hidden" name="_method" value="DELETE" />
                                             </form>
-
-                                            <!-- Modal Delete -->
-                                            <?php include __DIR__ . ' /../modal_delete.php' ?>
-                                        </td>
+                                        <?php endif; ?>
                                     <?php endif; ?>
-                                <?php else : ?>
-                                    <?php if ($user_role === '0') : ?>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                        data-target="#modalDetail<?= esc($i); ?>"
-                                                        id="#modalDetailButton" disabled>Detail
-                                                </button>
-                                            </div>
-                                            <?php include('modal_jadwal.php') ?>
-                                        </td>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-info" data-toggle="modal"
-                                                        data-target="#modalPinjam<?= esc($i); ?>"
-                                                        id="#modalPinjamButton" disabled>
-                                                    Pinjam
-                                                </button>
-                                            </div>
-                                        </td>
-                                    <?php else : ?>
-                                        <td>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                        data-target="#modalDetail<?= esc($i); ?>"
-                                                        id="#modalDetailButton">Detail
-                                                </button>
-                                            </div>
-                                            <?php include('modal_jadwal.php') ?>
-                                        </td>
-                                        <td>
-                                            <!-- Modal Edit -->
-                                            <?php include('modal_edit_lab.php') ?>
-                                            <div class="btn-group mr-2 mb-2 mb-md-0">
-                                                <button type="button" class="btn btn-sm btn-warning modalEditBtn"
-                                                        data-toggle="modal"
-                                                        data-target="#modalEdit<?= esc($i); ?>"
-                                                        id="modalEditButton"
-                                                        onclick="">
-                                                    Edit
-                                                </button>
-                                            </div>
-                                            <div class="btn-group">
-                                                <a class="btn btn-sm btn-danger" href="javascript:void(0);"
-                                                   data-toggle="modal"
-                                                   data-target="#modalDelete<?= esc($i); ?>">
-                                                    Hapus
-                                                </a>
-                                            </div>
-
-                                            <?php include __DIR__ . '/../modal_delete.php' ?>
-                                        </td>
-                                        <form id="form-delete-<?= $i; ?>" action="labs/<?= $lab->id ?>"
-                                              method="POST">
-                                            <input type="hidden" name="<?= csrf_token() ?>"
-                                                   value="<?= csrf_hash() ?>"/>
-                                            <input type="hidden" name="_method" value="DELETE"/>
-                                        </form>
-                                    <?php endif; ?>
-                                <?php endif; ?>
-                            </tr>
+                                </tr>
                             <?php $i++;
-                        endforeach; ?>
+                            endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -246,6 +220,11 @@ $this->section('script');
 <!-- Page level plugins -->
 <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/vendor/datatables/dataTables.buttons.min.js"></script>
+<script src="/vendor/datatables/jszip.min.js"></script>
+<script src="/vendor/datatables/pdfmake.min.js"></script>
+<script src="/vendor/datatables/vfs_fonts.js"></script>
+<script src="/vendor/datatables/buttons.html5.min.js"></script>
 <!-- ClockPicker -->
 <script src="/vendor/clock-picker/clockpicker.js"></script>
 <!-- Bootstrap Datepicker -->
@@ -253,17 +232,39 @@ $this->section('script');
 
 <!-- Page level custom scripts -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#dataTableHover').DataTable({
             columns: [{
-                width: '3%'
-            },
+                    width: '3%'
+                },
                 null,
                 null,
                 null,
                 null,
                 null,
                 null,
+            ],
+            dom: 'Bfrtip',
+            buttons: [{
+                    extend: 'pdfHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4],
+                    },
+                    className: 'btn btn-info btn-sm mr-2',
+                    title: "Daftar Lab UNSRI",
+                    download: 'open',
+                    pageSize: 'A4',
+                    messageTop: 'Daftar Lab',
+                },
+                {
+                    extend: 'excelHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4],
+                    },
+                    title: "Daftar Lab UNSRI",
+                    className: 'btn btn-info btn-sm mr-2',
+                    sheetName: 'Daftar Lab',
+                },
             ]
         }); // ID From dataTable with Hover
 
@@ -292,20 +293,20 @@ $this->section('script');
             max: '17:00',
         });
 
-        $('.check-minutes1').click(function (e) {
+        $('.check-minutes1').click(function(e) {
             e.stopPropagation();
             e.preventDefault();
             input1.clockpicker('show').clockpicker('toggleView', 'minutes');
         });
 
-        $('.check-minutes2').click(function (e) {
+        $('.check-minutes2').click(function(e) {
             e.stopPropagation();
             e.preventDefault();
             input2.clockpicker('show').clockpicker('toggleView', 'minutes');
         });
 
         let majors = <?= json_encode($majors) ?>;
-        $('.faculty-form').on('change', function (e) {
+        $('.faculty-form').on('change', function(e) {
             let facultyId = e.target.value;
             let majorsData = majors.filter((m) => m.faculty_id == facultyId);
             // Get target faculty form, and find the parent which is form group and find next siblings to find major select element
@@ -337,24 +338,25 @@ $this->section('script');
         let facultyForms = $('.faculty-form');
         let majorForms = $('.major-form');
         let statusForms = $('.status-lab-form');
-        <?php $idx = 0; foreach ($labs as $l) : ?>
+        <?php $idx = 0;
+        foreach ($labs as $l) : ?>
 
-        var targetFaculty = facultyForms['<?= $idx; ?>'];
-        targetFaculty.value = '<?= $l->faculty_id ?>';
+            var targetFaculty = facultyForms['<?= $idx; ?>'];
+            targetFaculty.value = '<?= $l->faculty_id ?>';
 
-        // Dispatch change event
-        targetFaculty.dispatchEvent(changeEvent);
+            // Dispatch change event
+            targetFaculty.dispatchEvent(changeEvent);
 
-        var targetMajor = majorForms['<?= $idx; ?>'];
-        targetMajor.value = '<?= $l->major_id ?? 'null' ?>';
+            var targetMajor = majorForms['<?= $idx; ?>'];
+            targetMajor.value = '<?= $l->major_id ?? 'null' ?>';
 
-        var targetStatus = statusForms['<?= $idx; ?>'];
-        targetStatus.value = '<?= esc($l->status_lab); ?>';
+            var targetStatus = statusForms['<?= $idx; ?>'];
+            targetStatus.value = '<?= esc($l->status_lab); ?>';
 
-        <?php $idx++; endforeach; ?>
+        <?php $idx++;
+        endforeach; ?>
 
     });
-
 </script>
 
 <?php

@@ -136,6 +136,8 @@ $this->section('css');
 
 ?>
 <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="/vendor/datatables/responsive.dataTables.min.css" rel="stylesheet">
+
 
 <?php
 $this->endSection();
@@ -146,11 +148,40 @@ $this->section('script');
 <!-- Page level plugins -->
 <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/vendor/datatables/dataTables.responsive.min.js"></script>
+<script src="/vendor/datatables/dataTables.buttons.min.js"></script>
+<script src="/vendor/datatables/jszip.min.js"></script>
+<script src="/vendor/datatables/pdfmake.min.js"></script>
+<script src="/vendor/datatables/vfs_fonts.js"></script>
+<script src="/vendor/datatables/buttons.html5.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script>
     $(document).ready(function () {
-        $('#dataTableHover').DataTable({}); // ID From dataTable with Hover
+        $('#dataTableHover').DataTable({
+            dom: 'Bfrtip',
+            buttons: [{
+                    extend: 'pdfHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 6, 7, 8],
+                    },
+                    title: "Riwayat Pinjaman Alat UNSRI",
+                    className: 'btn btn-info btn-sm mr-2',
+                    download: 'open',
+                    pageSize: 'A4',
+                    messageTop: 'Riwayat Pinjaman Alat',
+                },
+                {
+                    extend: 'excelHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 6, 7, 8],
+                    },
+                    title: "Riwayat Pinjaman Alat UNSRI",
+                    className: 'btn btn-info btn-sm mr-2',
+                    sheetName: 'Riwayat Pinjaman Alat',
+                }
+            ],
+        }); // ID From dataTable with Hover
         $('a.nav-link.collapsed').on('click', function (e) {
             e.preventDefault();
         });

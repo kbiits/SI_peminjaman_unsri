@@ -53,71 +53,69 @@ $this->section('content');
                 <div class="table-responsive p-3">
                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                         <thead class="thead-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Lab</th>
-                            <th>Fakultas</th>
-                            <th>Jurusan</th>
-                            <th>Status</th>
-                            <th>Detail Data Peminjam</th>
-                            <th>Tanggal</th>
-                            <th>Jam Masuk</th>
-                            <th>Jam Keluar</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Lab</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Status</th>
+                                <th>Detail Data Peminjam</th>
+                                <th>Tanggal</th>
+                                <th>Jam Masuk</th>
+                                <th>Jam Keluar</th>
+                            </tr>
                         </thead>
                         <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Lab</th>
-                            <th>Fakultas</th>
-                            <th>Jurusan</th>
-                            <th>Status</th>
-                            <th>Detail Data Peminjam</th>
-                            <th>Tanggal</th>
-                            <th>Jam Masuk</th>
-                            <th>Jam Keluar</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Lab</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Status</th>
+                                <th>Detail Data Peminjam</th>
+                                <th>Tanggal</th>
+                                <th>Jam Masuk</th>
+                                <th>Jam Keluar</th>
+                            </tr>
                         </tfoot>
                         <tbody>
-                        <?php $i = 1;
-                        foreach ($pinjaman as $p) : ?>
-                            <tr>
-                                <td><?= esc($i); ?></td>
-                                <td><?= esc($p->name); ?></td>
-                                <td><?= esc($p->faculty); ?></td>
-                                <td><?= esc($p->major ?? '-'); ?></td>
-                                <td>
-                                    <?php if ($p->tanggal > date('Y-m-d')) {
-                                        $statusBadge = 'danger';
-                                        $messageStatus = 'Masih dalam reservasi';
-                                    } else if ($p->tanggal === date('Y-m-d') && $p->jam_keluar > date('H:i')) {
-                                        $statusBadge = 'danger';
-                                        $messageStatus = 'Masih dalam reservasi';
-                                    } else {
-                                        $statusBadge = 'success';
-                                        $messageStatus = 'Selesai';
-                                    }
-                                    ?>
-                                    <span class="badge badge-<?= esc($statusBadge) ?>">
-                                        <?= $messageStatus ?>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-primary"
-                                                data-toggle="modal"
-                                                data-target="#modalDetailUser"
-                                                id="modalDetailUserBtn">
-                                            Lihat
-                                        </button>
-                                    </div>
-                                    <?php include(__DIR__ . '/../modal_detail_user.php'); ?>
-                                </td>
-                                <td><?= $p->tanggal ?></td>
-                                <td><?= $p->jam_masuk ?></td>
-                                <td><?= $p->jam_keluar ?></td>
-                            </tr>
-                            <?php $i++; endforeach; ?>
+                            <?php $i = 1;
+                            foreach ($pinjaman as $p) : ?>
+                                <tr>
+                                    <td><?= esc($i); ?></td>
+                                    <td><?= esc($p->name); ?></td>
+                                    <td><?= esc($p->faculty); ?></td>
+                                    <td><?= esc($p->major ?? '-'); ?></td>
+                                    <td>
+                                        <?php if ($p->tanggal > date('Y-m-d')) {
+                                            $statusBadge = 'danger';
+                                            $messageStatus = 'Masih dalam reservasi';
+                                        } else if ($p->tanggal === date('Y-m-d') && $p->jam_keluar > date('H:i')) {
+                                            $statusBadge = 'danger';
+                                            $messageStatus = 'Masih dalam reservasi';
+                                        } else {
+                                            $statusBadge = 'success';
+                                            $messageStatus = 'Selesai';
+                                        }
+                                        ?>
+                                        <span class="badge badge-<?= esc($statusBadge) ?>">
+                                            <?= $messageStatus ?>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalDetailUser" id="modalDetailUserBtn">
+                                                Lihat
+                                            </button>
+                                        </div>
+                                        <?php include(__DIR__ . '/../modal_detail_user.php'); ?>
+                                    </td>
+                                    <td><?= $p->tanggal ?></td>
+                                    <td><?= $p->jam_masuk ?></td>
+                                    <td><?= $p->jam_keluar ?></td>
+                                </tr>
+                            <?php $i++;
+                            endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -136,6 +134,7 @@ $this->section('css');
 
 ?>
 <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="/vendor/datatables/responsive.dataTables.min.css" rel="stylesheet">
 
 <?php
 $this->endSection();
@@ -146,12 +145,43 @@ $this->section('script');
 <!-- Page level plugins -->
 <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/vendor/datatables/dataTables.responsive.min.js"></script>
+<script src="/vendor/datatables/dataTables.buttons.min.js"></script>
+<script src="/vendor/datatables/jszip.min.js"></script>
+<script src="/vendor/datatables/pdfmake.min.js"></script>
+<script src="/vendor/datatables/vfs_fonts.js"></script>
+<script src="/vendor/datatables/buttons.html5.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script>
-    $(document).ready(function () {
-        $('#dataTableHover').DataTable({}); // ID From dataTable with Hover
-        $('a.nav-link.collapsed').on('click', function (e) {
+    $(document).ready(function() {
+        $('#dataTableHover').DataTable({
+            dom: 'Bfrtip',
+            buttons: [{
+                    extend: 'pdfHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 6, 7, 8],
+                    },
+                    className: 'btn btn-info btn-sm mr-2',
+                    download: 'open',
+                    pageSize: 'A4',
+                    messageTop: 'Riwayat Pemakaian Lab',
+                    title: "Riawat Pemakaian Lab UNSRI",
+
+                },
+                {
+                    extend: 'excelHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 3, 4, 6, 7, 8],
+                    },
+                    className: 'btn btn-info btn-sm mr-2',
+                    sheetName: 'Riwayat Pemakaian Lab',
+                    title: "Riawat Pemakaian Lab UNSRI",
+
+                }
+            ],
+        }); // ID From dataTable with Hover
+        $('a.nav-link.collapsed').on('click', function(e) {
             e.preventDefault();
         });
     });
@@ -160,4 +190,3 @@ $this->section('script');
 <?php
 $this->endSection();
 ?>
-

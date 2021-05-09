@@ -52,58 +52,56 @@ $this->section('content');
                 <div class="table-responsive p-3">
                     <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                         <thead class="thead-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Judul Buku</th>
-                            <th>Kategori</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul Buku</th>
+                                <th>Kategori</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
                         </thead>
                         <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Judul Buku</th>
-                            <th>Kategori</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
-                        </tr>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul Buku</th>
+                                <th>Kategori</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
                         </tfoot>
                         <tbody>
-                        <?php
-                        $i = 1;
-                        foreach ($pinjaman as $p) : ?>
-                            <tr>
-                                <td><?= esc($i); ?></td>
-                                <td><?= $p->title ?></td>
-                                <td><?= $p->category ?></td>
-                                <td>
-                                    <?php if ($p->status === '0') {
-                                        $statusBadge = 'danger';
-                                        $messageStatus = 'Masih dipinjam';
-                                    } else if ($p->status === '1') {
-                                        $statusBadge = 'success';
-                                        $messageStatus = 'Telah dikembalikan';
-                                    } else {
-                                        $statusBadge = 'warning';
-                                        $messageStatus = 'Menunggu konfirmasi admin';
-                                    }
-                                    ?>
-                                    <span class="badge badge-<?= esc($statusBadge) ?>">
-                                        <?= $messageStatus ?>
-                                    </span>
-                                </td>
-                                <td>
-                                    <a href="<?= esc($p->isbn) ?>/kembalikan/<?= esc($p->id) ?>"
-                                       class="btn btn-sm btn-info text-white <?= ($p->status == '1' || $p->status == '2') ? 'disabled' : '' ?>"
-                                    >
-                                        Kembalikan
-                                    </a>
-                                </td>
-                            </tr>
                             <?php
-                            $i++;
-                        endforeach; ?>
+                            $i = 1;
+                            foreach ($pinjaman as $p) : ?>
+                                <tr>
+                                    <td><?= esc($i); ?></td>
+                                    <td><?= $p->title ?></td>
+                                    <td><?= $p->category ?></td>
+                                    <td>
+                                        <?php if ($p->status === '0') {
+                                            $statusBadge = 'danger';
+                                            $messageStatus = 'Masih dipinjam';
+                                        } else if ($p->status === '1') {
+                                            $statusBadge = 'success';
+                                            $messageStatus = 'Telah dikembalikan';
+                                        } else {
+                                            $statusBadge = 'warning';
+                                            $messageStatus = 'Menunggu konfirmasi admin';
+                                        }
+                                        ?>
+                                        <span class="badge badge-<?= esc($statusBadge) ?>">
+                                            <?= $messageStatus ?>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="<?= esc($p->isbn) ?>/kembalikan/<?= esc($p->id) ?>" class="btn btn-sm btn-info text-white <?= ($p->status == '1' || $p->status == '2') ? 'disabled' : '' ?>">
+                                            Kembalikan
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php
+                                $i++;
+                            endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -135,17 +133,18 @@ $this->section('script');
 
 <!-- Page level custom scripts -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#dataTableHover').DataTable({
-            columns: [
-                {width: "3%"},
+            columns: [{
+                    width: "3%"
+                },
                 null,
                 null,
                 null,
                 null,
             ],
         }); // ID From dataTable with Hover
-        $('a.nav-link.collapsed').on('click', function (e) {
+        $('a.nav-link.collapsed').on('click', function(e) {
             e.preventDefault();
         });
     });
@@ -154,4 +153,3 @@ $this->section('script');
 <?php
 $this->endSection();
 ?>
-

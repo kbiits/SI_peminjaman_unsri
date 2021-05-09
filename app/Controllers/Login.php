@@ -60,7 +60,10 @@ class Login extends BaseController
                 session()->set('user', $user);
                 return redirect()->to('/');
             }
+            session()->setFlashdata('wrong-credentials', 'Password yang anda masukkan salah');
+            return redirect()->back();
         }
+        session()->setFlashdata('wrong-credentials', 'Email atau NIM tidak ditemukan');
         return redirect()->back();
     }
 }
