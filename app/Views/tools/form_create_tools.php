@@ -133,7 +133,6 @@ $this->section('script');
 
 ?>
 
-    <!-- Page level custom scripts -->
     <script>
         $(document).ready(function () {
 
