@@ -93,7 +93,7 @@ $user_role = session('user')['role'];
                                     </td>
                                     <td>
                                         <?php if ($user_role === '0') : ?>
-                                            <a href="/tools/<?= $tool->id ?>/pinjam">
+                                            <a href="/tools/<?= esc($tool->id); ?>/pinjam">
                                                 <button type="button" class="btn btn-sm btn-info" <?= $tool->stock <= 0 ? 'disabled' : '' ?>>
                                                     Pinjam
                                                 </button>

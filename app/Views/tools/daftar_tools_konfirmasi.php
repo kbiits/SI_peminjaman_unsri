@@ -104,7 +104,7 @@ $this->section('content');
                                 <td><?= esc($p->dipinjam_pada); ?></td>
                                 <td><?= esc($p->dikembalikan_pada ?? '-----'); ?></td>
                                 <td>
-                                    <a href="/tools/<?= esc($p->tools_id) ?>/konfirmasi/<?= esc($p->user_nim) ?>"
+                                    <a href="/tools/<?= esc($p->id) ?>/konfirmasi/<?= esc($p->user_nim) ?>"
                                        class="btn btn-sm btn-info text-white <?= ($p->status !== '2') ? 'disabled' : '' ?>"
                                     >
                                         Konfirmasi

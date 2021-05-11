@@ -269,7 +269,7 @@ class LabController extends BaseController
     public function history_all()
     {
         $peminjamanLabModel = new PeminjamanLabModel();
-        $data = $peminjamanLabModel->user()->lab()->jadwal()->asObject()->findAll();
+        $data = $peminjamanLabModel->user()->lab()->jadwal()->asObject()->orderBy('name')->findAll();
         return view('lab/all_history', [
             'pinjaman' => $data,
         ]);
@@ -310,12 +310,6 @@ class LabController extends BaseController
         $peminjamanModel = new PeminjamanLabModel();
         $check = $peminjamanModel->where('lab_id', $lab_id)->jadwal()->asObject()->where('jadwal_lab.tanggal', $data['tanggal'])
             ->orderBy('tanggal')->orderBy('jam_masuk')->findAll();
-        $newDate = new \StdClass();
-        $newDate->tanggal = $data['tanggal'];
-        $newDate->jam_masuk = $data['jam_masuk'];
-        $newDate->jam_keluar = $data['jam_keluar'];
-
-        $check[] = $newDate;
         $is_validated = static::checkDates($check);
         if (!$is_validated) {
             session()->setFlashdata('msg', "Jadwal yang anda masukkan bertabrakan dengan jadwal lain, silahkan ganti jadwal anda");

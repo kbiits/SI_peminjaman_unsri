@@ -19,7 +19,7 @@ class ToolController extends BaseController
     {
         $majors = (new Major())->asObject()->findAll();
         $faculties = (new Faculty())->asObject()->findAll();
-        $tools = (new ToolModel())->major()->faculty()->findAll();
+        $tools = (new ToolModel())->major()->faculty()->orderBy('name')->findAll();
         return view('tools/daftar_tools', [
             'tools' => $tools,
             'faculties' => $faculties,
@@ -41,7 +41,9 @@ class ToolController extends BaseController
             ->where('user_nim', $user['nim'])
             ->where('status', '0', true)
             ->orWhere('status', '2', true)
-            ->get()->getResult();
+            ->asObject()
+            ->orderBy('name')
+            ->findAll();
         return view('tools/daftar_tools_pinjaman_saya', [
             'pinjaman' => $dataPinjaman,
         ]);
@@ -62,7 +64,7 @@ class ToolController extends BaseController
             'dipinjam_pada' => date('Y-m-d'),
         ];
         $peminjamanAlatModel = new PeminjamanAlatModel();
-
+        $id = (int)($id);
         // Cek stok alat
         $alat1 = (new ToolModel())->find($id);
         if ($alat1 && $alat1->stock <= 0) {
@@ -71,8 +73,9 @@ class ToolController extends BaseController
         }
 
         // Cek apakah alat sedang dipinjam oleh user atau user sedang menunggu konfirmasi admin terkait pengembalian alatnya
-        $check = $peminjamanAlatModel->where('user_nim', $user_nim)->where('tools_id', $id)->asObject()->first();
-        if ($check) {
+        $checks = $peminjamanAlatModel->where('user_nim', $user_nim)->where('tools_id', $id)->asObject()->findAll();
+
+        foreach ($checks as $key => $check) {
             if ($check->status == '0') {
                 session()->setFlashdata('msg', 'Alat tersebut sedang anda pinjam, silahkan kembalikan terlebih dahulu untuk meminjam kembali');
                 return redirect()->back();
@@ -85,7 +88,7 @@ class ToolController extends BaseController
         // Decrement (Update) stok alat karena alat sedang dipinjam
         $alat = new ToolModel();
         $updated = $alat->update($id, [
-            'stock' => ($alat1->stock) - 1,
+            'stock' => ((int) $alat1->stock) - 1,
         ]);
         $created = $peminjamanAlatModel->save($data);
         if ($updated && $created) {
@@ -129,7 +132,7 @@ class ToolController extends BaseController
             return redirect()->back();
         }
         $alat->stock = $alat->stock++;
-        $updateStockAlat = $alatModel->builder()->update($alat->toArray(), "id = $tools_id", 1);
+        $updateStockAlat = $alatModel->builder()->update($alat->toArray(), "id = $tools_id");
 
         if ($updatePeminjaman && $updateStockAlat) {
             session()->setFlashdata('warning', 'Berhasil mengembalikan alat, silahkan tunggu konfirmasi admin terkait pengembalian alat tersebut');
@@ -149,17 +152,16 @@ class ToolController extends BaseController
     {
         $user_nim = session('user')['nim'];
         $peminjamanAlat = new PeminjamanAlatModel();
-        $dataPeminjaman = $peminjamanAlat->where('user_nim', $user_nim)->tool()->asObject()->get()->getResult();
+        $dataPeminjaman = $peminjamanAlat->where('user_nim', $user_nim)->tool()->asObject()->orderBy('name')->findAll();
         return view('tools/history_pinjaman_alat_saya', [
             'pinjaman' => $dataPeminjaman,
         ]);
-
     }
 
-    public function konfirmasi($tool_id, $user_nim)
+    public function konfirmasi($p_id, $user_nim)
     {
         $peminjamanAlatModel = new PeminjamanAlatModel();
-        $peminjamanAlat = $peminjamanAlatModel->where('user_nim', $user_nim)->where('tools_id', $tool_id)->first();
+        $peminjamanAlat = $peminjamanAlatModel->find($p_id);
         if (!$peminjamanAlat) {
             session()->setFlashdata('msg', 'Data pinjaman tidak ditemukan');
             return redirect()->back();
@@ -167,7 +169,7 @@ class ToolController extends BaseController
         $peminjamanAlat['status'] = '1';
         $peminjamanAlat['dikonfirmasi_pada'] = date('Y-m-d');
         $peminjamanId = $peminjamanAlat['id'];
-        $updated = $peminjamanAlatModel->builder()->update($peminjamanAlat, "id = $peminjamanId", 1);
+        $updated = $peminjamanAlatModel->builder()->update($peminjamanAlat, "id = $peminjamanId");
         if ($updated) {
             session()->setFlashdata('success', 'Pengembalian alat telah berhasil dikonfirmasi');
             return redirect()->back();
@@ -263,7 +265,7 @@ class ToolController extends BaseController
     public function show_data_konfirmasi()
     {
         $peminjamanAlatModel = new PeminjamanAlatModel();
-        $data = $peminjamanAlatModel->tool()->user()->where('status', '2')->get()->getResult();
+        $data = $peminjamanAlatModel->tool()->user()->where('status', '2')->asObject()->orderBy('name')->findAll();
         return view('tools/daftar_tools_konfirmasi', [
             'pinjaman' => $data,
         ]);
@@ -272,10 +274,9 @@ class ToolController extends BaseController
     public function history_all()
     {
         $peminjamanAlatModel = new PeminjamanAlatModel();
-        $data = $peminjamanAlatModel->tool()->user()->asObject()->findAll();
+        $data = $peminjamanAlatModel->tool()->user()->asObject()->orderBy('name')->findAll();
         return view('tools/all_history', [
             'pinjaman' => $data,
         ]);
     }
-
 }

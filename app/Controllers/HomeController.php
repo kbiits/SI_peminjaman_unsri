@@ -24,7 +24,7 @@ class HomeController extends BaseController
         }
 
 
-        $sql = "SELECT COUNT(pa.dipinjam_pada) AS count_data, \"pa\" AS type, MONTH(pa.dipinjam_pada) AS month FROM peminjaman_alat AS pa WHERE user_nim = '$nim' GROUP BY MONTH(pa.dipinjam_pada)
+        $sql = "SELECT COUNT('pa.dipinjam_pada') AS count_data, \"pa\" AS type, MONTH('pa.dipinjam_pada') AS month FROM peminjaman_alat AS pa WHERE user_nim = '$nim' GROUP BY MONTH('pa.dipinjam_pada')
             UNION ALL
     SELECT COUNT(pb.dipinjam_pada) AS pb_count, \"pb\" AS type, MONTH(pb.dipinjam_pada) AS month FROM peminjaman_buku AS pb WHERE user_nim = '$nim' GROUP BY MONTH(pb.dipinjam_pada)
             UNION ALL
@@ -32,9 +32,17 @@ class HomeController extends BaseController
             pl.user_nim = '$nim' GROUP BY MONTH(jadwal_lab.tanggal)
     )";
 
+        $postgreSql = "SELECT COUNT(pa.dipinjam_pada) AS count_data, 'pa' AS type, EXTRACT(MONTH FROM pa.dipinjam_pada) AS month FROM peminjaman_alat AS pa WHERE user_nim = '$nim' GROUP BY EXTRACT( MONTH FROM pa.dipinjam_pada)
+    UNION ALL
+SELECT COUNT(pb.dipinjam_pada) AS count_data, 'pb' AS type, EXTRACT( MONTH FROM pb.dipinjam_pada) AS month FROM peminjaman_buku AS pb WHERE user_nim = '$nim' GROUP BY EXTRACT( MONTH FROM pb.dipinjam_pada)
+    UNION ALL
+( SELECT COUNT(jadwal_lab.tanggal) AS count_data, 'pl' AS type, EXTRACT( MONTH FROM jadwal_lab.tanggal) AS month FROM jadwal_lab INNER JOIN peminjaman_lab AS pl ON pl.jadwal_id = jadwal_lab.id WHERE
+    pl.user_nim = '$nim' GROUP BY EXTRACT( MONTH FROM jadwal_lab.tanggal)
+)";
 
 
-        $data = $db->query($sql, null, true)->getResultObject();
+        // $data = $db->query($sql, null, true)->getResultObject();
+        $data = $db->query($postgreSql, null, true)->getResultObject();
 
         $lastMonth = date('n', strtotime('last month'));
         $thisMonth = date('n', strtotime('this month'));

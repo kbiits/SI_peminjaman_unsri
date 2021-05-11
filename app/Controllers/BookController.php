@@ -9,7 +9,7 @@ class BookController extends BaseController
 {
     public function index()
     {
-        $books = (new BookModel())->findAll();
+        $books = (new BookModel())->orderBy('title')->findAll();
         return view('books/daftar_books', [
             'books' => $books
         ]);
@@ -66,7 +66,7 @@ class BookController extends BaseController
     {
         $user = session('user');
         $peminjaman_buku = new PeminjamanBukuModel();
-        $peminjaman_buku = $peminjaman_buku->where('user_nim', $user['nim'])->where('status', '0')->orWhere('status', '2')->book()->get()->getResult();
+        $peminjaman_buku = $peminjaman_buku->where('user_nim', $user['nim'])->where('status', '0')->orWhere('status', '2')->book()->orderBy('title')->findAll();
         return view('books/daftar_buku_pinjaman_saya', [
             'pinjaman' => $peminjaman_buku,
         ]);
@@ -110,7 +110,7 @@ class BookController extends BaseController
         }
         $newStock = $book->stock + 1;
         $book->stock = $newStock;
-        $updateStockBuku = $bookModel->builder()->update($book->toArray(), "isbn = $isbn", 1);
+        $updateStockBuku = $bookModel->builder()->update($book->toArray(), "isbn = '$isbn'");
 
         if ($updatePeminjaman && $updateStockBuku) {
             session()->setFlashdata('warning', 'Berhasil Mengembalikan buku, silahkan tunggu konfirmasi admin terkait pengembalian buku tersebut');
@@ -150,7 +150,7 @@ class BookController extends BaseController
     {
         $user = session('user');
         $peminjaman_buku = new PeminjamanBukuModel();
-        $peminjaman_buku = $peminjaman_buku->where('user_nim', $user['nim'])->book()->get()->getResult();
+        $peminjaman_buku = $peminjaman_buku->where('user_nim', $user['nim'])->book()->orderBy('title')->findAll();
         return view('books/history_pinjaman_buku_saya', [
             'pinjaman' => $peminjaman_buku,
         ]);
@@ -233,7 +233,7 @@ class BookController extends BaseController
     public function show_data_konfirmasi()
     {
         $model = new PeminjamanBukuModel();
-        $data = $model->book()->user()->where('status', '2')->findAll();
+        $data = $model->book()->user()->where('status', '2')->orderBy('title')->findAll();
         return view('books/daftar_books_konfirmasi', [
             'pinjaman' => $data
         ]);
@@ -242,7 +242,7 @@ class BookController extends BaseController
     public function history_all()
     {
         $model = new PeminjamanBukuModel();
-        $data = $model->book()->user()->findAll();
+        $data = $model->book()->user()->orderBy('title')->findAll();
         return view('books/all_history', [
             'pinjaman' => $data
         ]);
