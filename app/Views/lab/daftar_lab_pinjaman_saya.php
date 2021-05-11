@@ -127,7 +127,7 @@ $this->section('content');
                                     <?php include('modal_edit_pinjaman_lab.php') ?>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#modalDelete"
+                                                data-target="#modalDelete<?= $i; ?>"
                                                 id="#modalDeleteBtn">Hapus
                                         </button>
                                     </div>
